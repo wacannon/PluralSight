@@ -1,0 +1,9 @@
+[2016-01-20 08:15:00] START
+[2016-01-20 14:50:31] CREATE basics.py: 0
+[2016-01-20 14:51:57] EDIT pluralsight/controllers/basics.py: 4
+[2016-01-20 14:52:30] CREATE basics/helloworld.html: 0
+[2016-01-20 14:53:49] EDIT pluralsight/views/basics/helloworld.html: 2
+[2016-01-20 14:55:48] EDIT pluralsight/views/basics/helloworld.html: 3
+[2016-01-20 15:14:09] CREATE basics/request_vars.html: 0
+[2016-01-20 15:19:56] CREATE basics/request_object.html: 0
+[2016-01-20 15:31:23] CREATE basics/random_number.html: 0
