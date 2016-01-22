@@ -8,7 +8,10 @@ def dashboard():
     request = urllib2.Request(url)
     base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
     request.add_header("Authorization", "Basic %s" % base64string)
-    result = urllib2.urlopen(request)
+    try:
+        result = urllib2.urlopen(request)
+    except urllib2.HTTPError, e:
+        error = e.fp.read()
 
     resultString = result.read()  # returns value as a string
     data = json.loads(resultString)  # converts to a json object
