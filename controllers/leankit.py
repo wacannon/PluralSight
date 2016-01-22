@@ -5,7 +5,7 @@ def dashboard():
     username = 'aaronc@aluminumtrailer.com'
     password = '8v!Wr2S'
 
-    request = urllib2.Request(url)
+    request = urllib2.Request(url, headers={'User-Agent' : "Magic Browser"})
     base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
     request.add_header("Authorization", "Basic %s" % base64string)
     try:
