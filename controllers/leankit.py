@@ -5,9 +5,9 @@ def dashboard():
     username = 'aaronc@aluminumtrailer.com'
     password = '8v!Wr2S'
 
-    request = urllib2.Request(url, headers={'User-Agent' : "Magic Browser"})
+    request = urllib2.Request(url)
     base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
-    request.add_header("Authorization", "Basic %s" % base64string)
+    request.add_header("Authorization", "Basic %s" % base64string, 'User-Agent' : 'Magic Browser')
     try:
         result = urllib2.urlopen(request)
     except urllib2.HTTPError, e:
