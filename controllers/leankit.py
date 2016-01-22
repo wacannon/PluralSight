@@ -35,3 +35,6 @@ def dashboard():
     blocked_table = HTML.table(response, header_row=['Lane',   'Card Id',   'Card Name', 'Reason','Due Date','Modified'])
 # print json.dumps(response)
 # print count
+
+def stories():
+    message = 'This is all active stories'
