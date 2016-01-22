@@ -29,7 +29,7 @@ for lane in lanes:
             lastModified = cards['LastActivity']
             response.append({'Lane': name, 'Card ID': cardId, 'Card Name': cardName, 'Why Blocked': reasonBlocked, 'Date Due': dateDue, 'Last Modified': lastModified})
             count += 1
-
+def dashboard():
 blocked_table = HTML.table(response, header_row=['Lane',   'Card Id',   'Card Name', 'Reason','Due Date','Modified'])
 # print json.dumps(response)
 # print count
